@@ -1,0 +1,30 @@
+{
+  "name": "graphQL-node-mongoDB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec babel-node --presets env,stage-2",
+    "build": "babel src -d dist --source-maps",
+    "serve": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-hey/graphQL-node-mongoDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/just-hey/graphQL-node-mongoDB/issues"
+  },
+  "homepage": "https://github.com/just-hey/graphQL-node-mongoDB#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "nodemon": "^1.17.5"
+  }
+}
