@@ -1,9 +1,14 @@
-import { makeExecuteableSchema } from 'graphql-tools'
+import { makeExecutableSchema } from 'graphql-tools'
 import { resolvers } from './resolvers'
 
-const typeDefs = `type Query { name: String! }`
+const typeDefs = `
+    type Query { 
+        name: String!
+        alias(heroName: String!): String!
+    }
+`
 
-exports default makeExecuteableSchema({
+export default makeExecutableSchema({
     typeDefs,
     resolvers
 })
