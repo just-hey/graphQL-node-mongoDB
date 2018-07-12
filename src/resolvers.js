@@ -1,7 +1,7 @@
 export const resolvers = {
     Query: {
-        name (root, args, context, info) {
-            return 'Justin'
+        hero (root, args, context, info) {
+            return 'Toshinori Yagi'
         },
         alias(root, {heroName}, context, info) {
             console.log(context)

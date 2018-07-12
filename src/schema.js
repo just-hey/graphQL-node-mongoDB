@@ -2,9 +2,13 @@ import { makeExecutableSchema } from 'graphql-tools'
 import { resolvers } from './resolvers'
 
 const typeDefs = `
-    type Query { 
+    type Hero {
+        _id: ID
         name: String!
-        alias(heroName: String!): String!
+        alias: String!
+    }
+    type Query { 
+        allHero: [Hero]
     }
 `
 
